@@ -21,5 +21,9 @@ public class GetAttribute2 {
 
         WebElement example1 = driver.findElement(By.linkText("/dynamic loading/1"));
         System.out.println(example1.getAttribute("hrefkkml,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, l "));
+
+        //partiallinktext
+        WebElement exmple2 = driver.findElement(By.partialLinkText("Example2"));
+        System.out.println(exmple2.getText());
     }
 }

@@ -17,7 +17,7 @@ public class FirstClass {
 
         //how do you launch / open a web page?
         //by using get() --> url a String
-       // driver.get("https://ww.google.com");
+       // driver.get("https://www.google.com");
 
         //Navigation's
         //navigate().to() --> open a page
