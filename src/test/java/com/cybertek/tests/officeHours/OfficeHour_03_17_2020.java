@@ -56,7 +56,25 @@ public class OfficeHour_03_17_2020 {
         contact1.put("Sales Group", "true");
         contact1.put("Country", "United States");
 
-        System.out.println("contact1 = " + contact1);
+        System.out.println("contact 1 = " + contact1);
+
+        WebElement first_name = driver.findElement(By.xpath("(//input[@data-name = 'field_first-name'])"));
+        WebElement last_name = driver.findElement(By.xpath("(//input[@data-name = 'field_last-name'])"));
+        WebElement phone = driver.findElement(By.name("oro-contact_form[phone][0][phone]"));
+        WebElement street = driver.findElement(By.name("oro-contact_form[addresses][0][street]"));
+        WebElement City = driver.findElement(By.name("oro-contact_form[addresses][0][city]"));
+        WebElement state = driver.findElement(By.xpath("(//input[@data-name = 'field_region-text'])"));
+        WebElement zipCode = driver.findElement(By.name("oro_contact_form[address][0][postal code]"));
+        WebElement salesGroup = driver.findElement(By.xpath("(//input[@data-name = 'field__1'])[2]"));
+        WebElement country = driver.findElement(By.xpath(""));
+
+                /*
+                To handle dropdown in selenium we are using Select class
+                to use it we have to ensure we have <select></select> tag in our dropdown
+                to create Select class we are using WebElement of <select></select>
+
+                 */
+
 
 
     }
