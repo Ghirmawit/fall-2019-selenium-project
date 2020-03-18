@@ -13,8 +13,6 @@ public class TestNGAssertionsTest {
         Assert.assertEquals(1,1);
         Assert.assertEquals(true,true);
         System.out.println("test one complete");
-
-
     }
     @Test
     public void test2(){
@@ -25,6 +23,21 @@ public class TestNGAssertionsTest {
         Assert.assertEquals(actual,expected);
 
         System.out.println("test 2 complete");
+    }
+    @Test
+    public void test3 (){
+        String expected = "one";
+        String actual = "two";
+
+        Assert.assertNotEquals(actual,expected);
+        Assert.assertNotEquals(1,2);
+    }
+    @Test
+    public void test4(){
+        String expected = "one";
+        String actual = "two";
+
+        //Assert.
     }
 
 }
